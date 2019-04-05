@@ -4,7 +4,7 @@
 * [CustomPropertyDescriptor.cs](./CS/PropertyGridWithDictionary/CustomPropertyDescriptor.cs) (VB: [CustomPropertyDescriptor.vb](./VB/PropertyGridWithDictionary/CustomPropertyDescriptor.vb))
 * [DictionaryWrapper.cs](./CS/PropertyGridWithDictionary/DictionaryWrapper.cs) (VB: [DictionaryWrapper.vb](./VB/PropertyGridWithDictionary/DictionaryWrapper.vb))
 * [MainWindow.xaml](./CS/PropertyGridWithDictionary/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/PropertyGridWithDictionary/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/PropertyGridWithDictionary/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/PropertyGridWithDictionary/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/PropertyGridWithDictionary/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/PropertyGridWithDictionary/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to: Edit Dynamic Properties in the PropertyGridControl
 
