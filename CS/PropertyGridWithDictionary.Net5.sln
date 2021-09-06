@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyGridWithDictionary", "PropertyGridWithDictionary\PropertyGridWithDictionary.csproj", "{6ED2FD11-6FD0-44AA-BE6B-6D0C9A692C6C}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyGridWithDictionary", "PropertyGridWithDictionary\PropertyGridWithDictionary.Net5.csproj", "{6ED2FD11-6FD0-44AA-BE6B-6D0C9A692C6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
