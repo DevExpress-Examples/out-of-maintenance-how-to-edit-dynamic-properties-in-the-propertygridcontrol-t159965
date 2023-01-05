@@ -14,7 +14,7 @@ namespace PropertyGridWithDictionary {
             List<PropertyDescriptor> coll = new List<PropertyDescriptor>();
             foreach (string key in Dict.Keys)
                 coll.Add(new CustomPropertyDescriptor<T>(typeof(DictionaryWrapper<T>), key, Dict[key].GetType(), new Attribute[] { }));
-            _collection = new PropertyDescriptorCollection(coll.ToArray<PropertyDescriptor>());
+            _collection = new PropertyDescriptorCollection(coll.ToArray());
         }
 
         public AttributeCollection GetAttributes() {
