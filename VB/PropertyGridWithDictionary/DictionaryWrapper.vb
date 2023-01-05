@@ -1,9 +1,9 @@
-﻿Imports System
+Imports System
 Imports System.Collections.Generic
-Imports System.Linq
 Imports System.ComponentModel
 
 Namespace PropertyGridWithDictionary
+
     Friend Class DictionaryWrapper(Of T)
         Implements ICustomTypeDescriptor
 
@@ -13,10 +13,11 @@ Namespace PropertyGridWithDictionary
 
         Public Sub New(ByVal dict As Dictionary(Of String, T))
             Me.Dict = dict
-            Dim coll As New List(Of PropertyDescriptor)()
+            Dim coll As List(Of PropertyDescriptor) = New List(Of PropertyDescriptor)()
             For Each key As String In Me.Dict.Keys
-                coll.Add(New CustomPropertyDescriptor(Of T)(GetType(DictionaryWrapper(Of T)), key, Me.Dict(key).GetType(), New Attribute() { }))
-            Next key
+                coll.Add(New CustomPropertyDescriptor(Of T)(GetType(DictionaryWrapper(Of T)), key, Me.Dict(key).GetType(), New Attribute() {}))
+            Next
+
             _collection = New PropertyDescriptorCollection(coll.ToArray())
         End Sub
 
@@ -48,7 +49,7 @@ Namespace PropertyGridWithDictionary
             Return New Object()
         End Function
 
-        Public Function GetEvents(ByVal attributes() As Attribute) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents
+        Public Function GetEvents(ByVal attributes As Attribute()) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents
             Return Nothing
         End Function
 
@@ -56,7 +57,7 @@ Namespace PropertyGridWithDictionary
             Return Nothing
         End Function
 
-        Public Function GetProperties(ByVal attributes() As Attribute) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties
+        Public Function GetProperties(ByVal attributes As Attribute()) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties
             Return _collection
         End Function
 
